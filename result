@@ -1,0 +1,20 @@
+#1
+cat /etc/apt/sources.list
+
+#2
+sudo apt update
+
+#3
+apt show build-essential
+
+#4
+sudo apt install build-essential
+apt-cache depends build-essential
+
+#5
+apt search "clone with a bastard algorithm"
+
+#6
+mkdir bastSource
+cd bastSource
+apt source bastet
