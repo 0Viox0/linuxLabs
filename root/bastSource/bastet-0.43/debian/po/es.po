@@ -1,0 +1,72 @@
+# bastet po-debconf translation to Spanish
+# Copyright (C) 2010 Software in the Public Interest
+# This file is distributed under the same license as the bastet package.
+#
+# Changes:
+# - Initial translation
+# Camaleón <noelamac@gmail.com>, 2011
+#
+# - Updates
+#
+#
+# Traductores, si no conocen el formato PO, merece la pena leer la
+# documentación de gettext, especialmente las secciones dedicadas a este
+# formato, por ejemplo ejecutando:
+# info -n '(gettext)PO Files'
+# info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+# http://www.debian.org/intl/spanish/
+# especialmente las notas y normas de traducción en
+# http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+# /usr/share/doc/po-debconf/README-trans
+# o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet 0.43-2\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2011-04-16 21:50+0200\n"
+"Last-Translator: Camaleón <noelamac@gmail.com>\n"
+"Language-Team: Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr ""
+"¿Desea eliminar el archivo con formato antiguo de las mejores puntuaciones "
+"de Bastet?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"La nueva versión de Bastet no puede leer los archivos con formato antiguo de "
+"las mejores puntuaciones como el que se encuentra en «/var/games/bastet."
+"scores»."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Puede eliminar ahora el archivo de puntuaciones con formato antiguo. Si "
+"prefiere mantenerlo en el sistema, Bastet lo ignorará, así como el sistema "
+"de administración de paquetes."

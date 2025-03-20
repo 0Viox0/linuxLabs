@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Bastard Tetris
+GenericName=bastet
+Comment=Go mad with this Tetris clone
+Comment[de]=Ein Tetris-Klon zum Verrücktwerden
+Exec=bastet
+Icon=bastet
+Terminal=true
+Categories=Game;BlocksGame;
+Keywords=tetris;console;terminal;ncurses;bastard;algorithm;

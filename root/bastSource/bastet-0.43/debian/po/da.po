@@ -1,0 +1,45 @@
+# Danish translation bastet.
+# Copyright (C) 2011 bastet & nedenstående oversættere.
+# This file is distributed under the same license as the bastet package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2011-04-16 19:21+0100\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "Fjern ældre formater af Bastet-filer med bedste resultater?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"Den nye version af Bastet kan ikke læse det gamle format for filer med de "
+"bedste resultater, såsom den i /var/games/bastet.scores."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Du kan beslutte at fjerne den gamle fil nu. Hvis du efterlader den på "
+"systemet, vil den blive ignoreret af Bastet og vil ikke længere blive sporet "
+"af pakkehåndteringssystemet."

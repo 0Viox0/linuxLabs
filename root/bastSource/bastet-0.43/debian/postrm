@@ -1,0 +1,13 @@
+#! /bin/sh
+# postrm script for bastet
+
+set -e
+
+if [ "$1" = purge ] ; then
+  rm -f /var/games/bastet.scores2
+fi
+
+#DEBHELPER#
+
+exit 0
+

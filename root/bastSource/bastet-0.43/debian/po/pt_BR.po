@@ -1,0 +1,47 @@
+# Debconf translations for bastet
+# Copyright (C) 2012 THE bastet'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the bastet package.
+# Eder L. Marques <eder@edermarques.net>, 2012
+# Adriano Rafael Gomes <adrianorg@arg.eti.br>, 2014
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet 0.43-2.1+b1\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2014-10-10 19:47-0300\n"
+"Last-Translator: Adriano Rafael Gomes <adrianorg@arg.eti.br>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "Remover o arquivo de pontuações do Bastet no formato antigo?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"A nova versão do Bastet não lê arquivos de pontuações no formato antigo, "
+"como o existente em /var/games/bastet.scores."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Você pode decidir remover o arquivo antigo de pontuações agora. Se você "
+"deixá-lo no sistema, ele será ignorado pelo Bastet e não será mais "
+"acompanhado pelo sistema de gerenciamento de pacotes."

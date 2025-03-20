@@ -1,0 +1,77 @@
+# Portuguese translation for bastet (debconf)
+# This file is distributed under the same license as the bastet package.
+# Rui Branco <ruipb@debianpt.org>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet 0.43-2\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2011-07-23 11:30+0100\n"
+"Last-Translator: Rui Branco <ruipb@debianpt.org>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "Remover o ficheiro antigo de recordes de pontuações do Bastet?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"A nova versão do Bastet não consegue ler os recordes de pontuções no formato "
+"antigo, tal como em '/var/games/bastet.scores'."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Pode decidir remover o ficheiro de recordes de pontuações agora. Se o deixar "
+"no sistema será ignorado pelo Bastet e não poderá ser gerido pelo sistema "
+"gestor de pacotes."
+
+#~ msgid "keep"
+#~ msgstr "manter"
+
+#~ msgid "remove"
+#~ msgstr "remover"
+
+#~ msgid "What would you like to do with the old scores file?"
+#~ msgstr "O que pretende fazer com o ficheiro antigo das pontuações?"
+
+#~ msgid ""
+#~ "As of version 0.43 the scores file format has changed. As newer Bastet "
+#~ "does not provide any compatibility layer with the old format, your old "
+#~ "scores file is no longer valid."
+#~ msgstr ""
+#~ "A partir da versão 0.43 o formato do ficheiro das pontuações foi "
+#~ "alterado. Como o novo Bastet não fornece nenhuma camada de "
+#~ "compatibilidade com o formato antigo, o seu ficheiro de pontuações antigo "
+#~ "deixa de ser válido."
+
+#~ msgid ""
+#~ "To prevent data loss, it's time for you to choose what to do with the old "
+#~ "file. If you decide to keep it, it's your responsibility to keep track of "
+#~ "it in the future.  If you don't mind losing your old high scores, it's "
+#~ "recommended  to remove the file to avoid cluttering your system with "
+#~ "files  not handled by the package manager."
+#~ msgstr ""
+#~ "Para prevenir perda de dados, é altura de escolher o que fazer com o "
+#~ "ficheiro antigo. Se decidir mantê-lo, é sua responsabilidade acompanhá-lo "
+#~ "no futuro.  Se não se importar de perder os seus recordes de pontuação, é "
+#~ "recomendado que remova o ficheiro para evitar encher o seu sistema com "
+#~ "ficheiros que não são geridos pelo gestor de pacotes."

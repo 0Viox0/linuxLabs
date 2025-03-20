@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_fixperms:
+	dh_fixperms
+	chgrp games debian/bastet/usr/games/bastet
+	chmod 2755 debian/bastet/usr/games/bastet
+
+override_dh_auto_clean:
+	-$(MAKE) mrproper
+	$(RM) depend

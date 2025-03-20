@@ -1,0 +1,19 @@
+# These templates have been reviewed by the debian-l10n-english
+# team
+#
+# If modifications/additions/rewording are needed, please ask
+# debian-l10n-english@lists.debian.org for advice.
+#
+# Even minor modifications require translation updates and such
+# changes should be coordinated with translators and reviewers.
+
+Template: bastet/score_file_compatibility
+Type: boolean
+Default: false
+_Description: Remove old-format Bastet highscores file?
+ The new version of Bastet cannot read highscores files in the old
+ format, like the one at /var/games/bastet.scores.
+ .
+ You can decide to remove the old scores file now. If you leave it on
+ the system it will be ignored by Bastet and will no longer be
+ tracked by the package management system.

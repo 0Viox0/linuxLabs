@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# victory <victory.deb@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-16 14:41+0000\n"
+"PO-Revision-Date: 2012-06-16 23:41+0900\n"
+"Last-Translator: victory <victory.deb@gmail.com>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "古い形式の Bastet 最高得点ファイルを削除しますか?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"新しいバージョンの Bastet は /var/games/bastet.scores にあるような古い形式の"
+"最高得点ファイルを読めません。"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"古い得点の削除をここで決めることができます。システム上に残して置いた場合、"
+"Bastet は無視し、パッケージ管理システムによる追跡も行われません。"

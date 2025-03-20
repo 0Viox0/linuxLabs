@@ -1,0 +1,23 @@
+From: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Date: Tue, 29 Apr 2014 01:45:52 +0200
+Subject: 01_local_hiscores_file_check
+
+---
+ Config.cpp | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/Config.cpp b/Config.cpp
+index 1e4498a..4584721 100644
+--- a/Config.cpp
++++ b/Config.cpp
+@@ -76,9 +76,8 @@ namespace Bastet{
+ 
+     //falls back to the user-specific file
+     string s=string(getenv("HOME"))+LocalHighScoresFileName;
+-    cerr<<boost::str(boost::format("bastet: using a user-specific high scores file: %1%\nas the global high scores file %2% is not writable\n") % s % GlobalHighScoresFileName);
+-
+     if(result.empty()){
++      cerr<<boost::str(boost::format("bastet: using a user-specific high scores file: %1%\nas the global high scores file %2% is not writable\n") % s % GlobalHighScoresFileName);
+       fstream ofs2(s.c_str());
+       if(!ofs2.fail()){
+ 

@@ -1,0 +1,45 @@
+# Translation of bastet debconf template to French
+# Copyright (C) 2011 Debian French l10n Team
+# This file is distributed under the same license as the bastet package.
+# Steve Petruzzello, <dlist@bluewin.ch>, 2011
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet_0.43-1\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2011-04-21 14:33+0200\n"
+"Last-Translator: Steve Petruzzello <dlist@bluewin.ch>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "Faut-il supprimer l'ancien fichier des scores de Bastet ?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"La nouvelle version de Bastet ne peut lire l'ancien format des fichiers de "
+"scores, comme « /var/games/bastet.scores »."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Vous pouvez décider de supprimer cet ancien fichier maintenant. Si vous le "
+"laissez sur le système, Bastet l'ignorera et il ne sera plus suivi par le "
+"système de gestion de paquets."

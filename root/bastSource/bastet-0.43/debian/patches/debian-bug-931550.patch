@@ -1,0 +1,25 @@
+From: Markus Koschany <apo@debian.org>
+Date: Sun, 15 Nov 2020 01:14:19 +0100
+Subject: debian bug 931550
+
+Do not quote the scorer twice.
+
+Bug-Debian: https://bugs.debian.org/931550
+Forwarded: no
+---
+ Config.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Config.cpp b/Config.cpp
+index 4584721..7edff71 100644
+--- a/Config.cpp
++++ b/Config.cpp
+@@ -187,7 +187,7 @@ namespace Bastet{
+     for(int difficulty=0;difficulty<num_difficulties;++difficulty){
+       int i=0;
+       BOOST_FOREACH(const HighScore &hs, _hs[difficulty]){
+-	ofs2<<str(scorer % difficulty % i) << " = \"" << hs.Scorer << "\"\n";
++	ofs2<<str(scorer % difficulty % i) << " = " << hs.Scorer << "\n";
+ 	ofs2<<str(score % difficulty % i) << " = " << hs.Score <<"\n";
+ 	i++;
+       }

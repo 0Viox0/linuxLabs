@@ -1,0 +1,4 @@
+bastet /usr/games/
+debian/*.desktop usr/share/applications/
+debian/icons/bastet.png usr/share/icons/hicolor/96x96/apps
+debian/icons/bastet.xpm usr/share/pixmaps

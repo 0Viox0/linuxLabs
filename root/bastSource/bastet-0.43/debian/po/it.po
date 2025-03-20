@@ -1,0 +1,46 @@
+# Italian translation of bastet debconf messages.
+# Copyright (C) 2012, bastet package copyright holder.
+# This file is distributed under the same license as the bastet package.
+# Beatrice Torracca <beatricet@libero.it>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet 0.43-2.1\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2012-02-03 14:22+0100\n"
+"Last-Translator: Beatrice Torracca <beatricet@libero.it>\n"
+"Language-Team: Italiano <debian-l10n-Italian@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1)\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "Rimuovere il file dei punteggi di Bastet nel vecchio formato?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"La nuova versione di Bastet non è in grado di leggere i file dei punteggi "
+"nel vecchio formato, come quello in /var/games/bastet.scores."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Si può decidere di rimuovere il vecchio file dei punteggi adesso. Se lo si "
+"lascia nel sistema, Bastet lo ignorerà e il sistema di gestione dei "
+"pacchetti non ne terrà più conto."

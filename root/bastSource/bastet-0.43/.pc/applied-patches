@@ -1,0 +1,4 @@
+01_local_hiscores_file_check.patch
+02_manpage_global_hiscore_path.patch
+debian-bug-931550.patch
+format-security.patch

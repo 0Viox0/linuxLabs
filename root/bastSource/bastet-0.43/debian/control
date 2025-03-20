@@ -1,0 +1,27 @@
+Source: bastet
+Section: games
+Priority: optional
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ libboost-dev,
+ libboost-program-options-dev,
+ libncurses5-dev | libncurses-dev,
+ po-debconf
+Standards-Version: 4.6.0
+Homepage: http://fph.altervista.org/prog/bastet.shtml
+Vcs-Git: https://salsa.debian.org/games-team/bastet.git
+Vcs-Browser: https://salsa.debian.org/games-team/bastet
+
+Package: bastet
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: ncurses Tetris clone with a bastard algorithm
+ Bastet ("bastard Tetris") is a free clone of Tetris which tries to
+ compute how useful blocks are and gives you the worst possible brick.
+ Playing bastet can be a painful experience, especially if you usually
+ make "canyons" and wait for the long I-shaped block.

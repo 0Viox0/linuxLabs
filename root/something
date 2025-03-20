@@ -1,0 +1,72 @@
+#1
+cat /etc/apt/sources.list
+
+#2
+apt update
+
+#3
+apt show build-essential
+
+#4
+apt install build-essential
+apt-cache depends build-essential
+
+#5
+apt search "clone with a bastard algorithm"
+
+#6, 7, 8
+mkdir bastSource
+cd bastSource
+apt source bastet
+
+# inside of the makefile
+
+install:
+	install -m 755 $(PROGNAME) /usr/local/bin/$(PROGNAME)
+
+make
+make install
+
+#9
+useradd someuser
+mkdir /home/someuser/
+chown someuser:someuser /home/someuser/
+
+su - someuser
+bastet
+
+#10
+dpkg -l > task10.log
+
+#11
+apt-cache depends gcc > task11.log
+
+#12
+apt-cache rdepends libgpm2 > task12.log
+
+#13
+mkdir localrepo
+cd localrepo
+wget http://snapshot.debian.org/archive/debian/20250312T144852Z/pool/main/h/htop/htop_3.4.0-2_amd64.deb
+
+#14
+dpkg-scanpackages . /dev/null > Packages
+apt update
+
+#15
+# we write this in /etc/apt/source.list:
+deb [trusted=yes] file:/root/localrepo ./
+
+apt update
+
+#16
+apt-cache policy > task16.log
+
+#17
+apt-cache madison htop > task17.log
+
+#18
+sudo apt install htop=3.2.2-2
+
+#19
+

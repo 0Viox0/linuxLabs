@@ -1,0 +1,3 @@
+version=3
+
+http://fph.altervista.org/prog/bastet.html files/bastet-([\d\.]+)\.tgz

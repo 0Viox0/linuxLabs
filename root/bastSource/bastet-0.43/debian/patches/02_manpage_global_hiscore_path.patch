@@ -1,0 +1,21 @@
+From: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Date: Tue, 29 Apr 2014 01:45:52 +0200
+Subject: 02_manpage_global_hiscore_path
+
+---
+ bastet.6 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/bastet.6 b/bastet.6
+index 5bbcc8f..9dcf32e 100644
+--- a/bastet.6
++++ b/bastet.6
+@@ -39,7 +39,7 @@ User options
+ .I $(HOME)/.bastetscores
+ User-specific high scores file (used only if the system high scores file is unavailable)
+ 
+-.I /var/games/bastet.scores
++.I /var/games/bastet.scores2
+ System-wide high scores for bastet.
+ 
+ .SH OPTIONS

@@ -1,0 +1,211 @@
+bastet (0.43-7) unstable; urgency=medium
+
+  * Add format-security.patch and fix FTBFS with latest version of ncurses.
+    (Closes: #997142)
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 24 Oct 2021 14:13:33 +0200
+
+bastet (0.43-6) unstable; urgency=medium
+
+  * Fix Debian bug 931550 and do not quote the scorer twice.
+    Thanks to Stefano Gandelli for the report. (Closes: #931550)
+  * Switch to debhelper-compat = 13.
+  * Declare compliance with Debian Policy 4.5.0.
+
+ -- Markus Koschany <apo@debian.org>  Sun, 15 Nov 2020 01:36:12 +0100
+
+bastet (0.43-5) unstable; urgency=medium
+
+  * Switch to compat level 11.
+  * Declare compliance with Debian Policy 4.1.4.
+  * Move the package to Git and salsa.debian.org.
+  * Remove Nacho Barrientos Arias from Uploaders. (Closes: #869343)
+  * Add myself to Uploaders to comply with Debian's Policy.
+  * Remove deprecated menu file.
+
+ -- Markus Koschany <apo@debian.org>  Thu, 17 May 2018 14:43:47 +0200
+
+bastet (0.43-4) unstable; urgency=medium
+
+  * Team upload.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Vcs-Browser: Use https.
+  * Add Brazilian Portuguese debconf templates translation.
+    Thanks to Adriano Rafael Gomes for the report and patch. (Closes: #764775)
+  * Use standard setuid executable permissions for bastet.
+
+ -- Markus Koschany <apo@debian.org>  Mon, 02 Nov 2015 14:55:29 +0100
+
+bastet (0.43-3) unstable; urgency=medium
+
+  * Team upload.
+  * bastet.config: Use set -e in the script's body.
+  * bastet.desktop: Add keywords and a comment in German.
+  * Declare compliance with Debian policy 3.9.5.
+  * Use compat level 9 and require debhelper >= 9.
+  * wrap-and-sort -sa.
+  * Simplify debian/rules by using dh sequencer.
+  * menu: Add longtitle and icon entry.
+  * debian/copyright: Fix copyright-refers-to-symlink-license.
+  * Add DEP-3 headers to patches.
+  * [Debconf translation updates] Thanks to
+    - Italian (Beatrice Torracca) (Closes: #659385)
+    - Japanese (victory) (Closes: #692840)
+  * Add bastet.png and bastet.xpm icon. (Closes: #726210)
+
+  [ Evgenis Golov ]
+  * Correct Vcs-* URLs to point to anonscm.debian.org.
+
+ -- Markus Koschany <apo@gambaru.de>  Tue, 29 Apr 2014 17:39:47 +0200
+
+bastet (0.43-2.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix pending l10n issues. Debconf translations:
+  * Debconf templates and debian/control reviewed by the debian-l10n-
+    english team as part of the Smith review project. Closes: #622227
+  * [Debconf translation updates]
+    - Russian (Yuri Kozlov).  Closes: #622948
+    - Danish (Joe Hansen).  Closes: #622983
+    - Czech (Michal Simunek).  Closes: #623360
+    - Swedish (Martin Bagge / brother).  Closes: #623404
+    - German (Chris Leick).  Closes: #623566
+    - French (Steve Petruzzello).  Closes: #623823
+    - Spanish (Camaleón).  Closes: #624235
+    - Dutch (Jeroen Schot).  Closes: #634307
+    - Portuguese (Rui Branco).  Closes: #635127
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 24 Jul 2011 12:25:48 +0200
+
+bastet (0.43-2) unstable; urgency=low
+
+  * Team upload.
+  * Build-depend on unversioned libboost*-dev packages to prevent a FTBFS in
+    the future as libboost*1.42-dev packages will be dropped from the archive.
+    (Closes: #630435)
+
+ -- Bruno "Fuddl" Kleinert <fuddl@debian.org>  Wed, 15 Jun 2011 11:32:43 +0200
+
+bastet (0.43-1) unstable; urgency=low
+
+  [ Evgeni Golov ]
+  * Update watchfile.
+
+  [ Nacho Barrientos Arias ]
+  * New upstream release (closes: #563400).
+   - Now it doesn't ftbfs with binutils-gold out of the box.
+     (closes: #612176).
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * debian/patches
+   - Drop 01_Makefile (no longer necessary).
+   - Drop 02_kFreeBSD_FTBFS_fix (no longer necessary).
+   - Add 01_local_hiscores_file_check.patch: only print "using a
+     user-specific high scores file" if the global scores file is
+     not writable.
+   - Add 02_manpage_global_hiscore_path.patch: point to the correct
+     location of the global scores file.
+  * debian/control
+   - Add b-ds: libboost1.42-dev, libboot-program-options1.42-dev, po-debconf
+   - Bump debhelper compatibility level to 8.
+  * debian/docs
+   - No longer installing README-Petris.
+  * debian/copyright
+   - Remove information regarding Petris inheritance as it
+     no longer applies.
+  * debian/bastet.{config, templates}
+   - Add a simple Debconf select to deal with old-style scores file.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Sun, 13 Mar 2011 14:57:00 +0000
+
+bastet (0.41-6) unstable; urgency=low
+
+  [ Barry deFreese ]
+  * Fix up desktop file (Encoding is deprecated now)
+  * Add watch file
+  * Add Homepage field in control section
+  * Man page grammar and spelling clean-up. (Closes: #457823).
+
+  [ Ansgar Burchardt ]
+  * Added Vcs-Svn and Vcs-Browser fields in the control file.
+  * Don't distribute score file, create in postinst instead (Closes: #461626).
+  * Update Debian Standards version to 3.7.3
+  * Remove Homepage reference from long description
+  * Remove redundant -Wall from DEPCFLAGS
+
+  [ Nacho Barrientos Arias ]
+  * Changes look OK, uploading.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Sun, 02 Mar 2008 12:09:40 +0100
+
+bastet (0.41-5) unstable; urgency=low
+
+  * debian/control
+   - New comaintainer email address.
+   - Switching to quilt.
+  * debian/menu
+   - Games::Tetris-Like no longer exists, switching to Games::Blocks
+     according to Debian menu transition.
+     <http://lists.debian.org/debian-devel-announce/2007/07/msg00000.html>
+   - Capitalizing the title.
+  * debian/rules, debian/*.desktop, debian/install
+   - Added a .desktop file.
+
+ -- Nacho Barrientos Arias <nacho@debian.org>  Mon, 09 Jul 2007 21:16:13 +0200
+
+bastet (0.41-4) unstable; urgency=low
+
+  * New maintainer (closes: #387203).
+  - See http://lists.debian.org/debian-devel/2006/09/msg00330.html
+  - Adding this game to Debian Games Team.
+  * debian/control
+  - Bumping standards version to 3.7.2.
+  - Promoting Debhelper version to 5.
+  - Adding dpatch as build-dep.
+  - Adding homepage URL.
+  * debian/rules
+  - Using mrproper instead of clean.
+  - Patches are now managed by dpatch.
+  - Minor repairs.
+  * debian/docs
+  - Removed TODO from installation list.
+  * debian/copyright
+  - Rewritten.
+
+ -- Nacho Barrientos Arias <chipi@criptonita.com>  Wed, 13 Sep 2006 00:55:27 +0200
+
+bastet (0.41-3) unstable; urgency=low
+
+  * Maintainer address changed.
+
+ -- David Moreno Garza <damog@debian.org>  Sat, 20 Aug 2005 18:22:26 -0500
+
+bastet (0.41-2) unstable; urgency=low
+
+  * Changed termio.h to termios.h to fix FTBFS on kFreeBSD (Closes: #316921).
+  * Updated Standards-Version.
+  * Added sponsor as Uploader field on debian/control.
+
+ -- David Moreno Garza <damog@damog.net>  Mon,  4 Jul 2005 15:51:17 -0500
+
+bastet (0.41-1) unstable; urgency=low
+
+  * New upstream release.
+  * Uploaded by Gunnar Wolf <gwolf@debian.org>
+
+ -- David Moreno Garza <damog@damog.net>  Thu, 21 Oct 2004 12:37:08 -0500
+
+bastet (0.37-2) unstable; urgency=low
+
+  * Missing Build-Depends libncurses-dev, reported by Goswin von Brederlow (closes: #255131).
+
+ -- David Moreno Garza <damog@damog.net>  Mon, 21 Jun 2004 01:10:17 -0500
+
+bastet (0.37-1) unstable; urgency=low
+
+  * Initial Release (Closes: #247029).
+  * Modified upstream Makefile to fit Debian needs on setgid cases.
+  * Added the security patch on highscore.c by Debian Audit.
+
+ -- David Moreno Garza <damog@damog.net>  Sun,  2 May 2004 13:26:53 -0500
+

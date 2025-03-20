@@ -1,0 +1,44 @@
+# German debconf translation of bastet.
+# This file is distributed under the same license as the bastet package.
+# Copyright (C) 2011 Chris Leick <c.leick@vollbio.de>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bastet 0.43-2\n"
+"Report-Msgid-Bugs-To: bastet@packages.debian.org\n"
+"POT-Creation-Date: 2011-04-15 08:24+0200\n"
+"PO-Revision-Date: 2011-04-21 19:03+0100\n"
+"Last-Translator: Chris Leick <c.leick@vollbio.de>\n"
+"Language-Team: German <debian-l10n-german@lists.debian.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid "Remove old-format Bastet highscores file?"
+msgstr "Die Bastet-Bestenliste im alten Format löschen?"
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"The new version of Bastet cannot read highscores files in the old format, "
+"like the one at /var/games/bastet.scores."
+msgstr ""
+"Die neue Version von Bastet kann keine Bestenliste im alten Format wie die "
+"in /var/games/bastet.scores lesen."
+
+#. Type: boolean
+#. Description
+#: ../bastet.templates:2001
+msgid ""
+"You can decide to remove the old scores file now. If you leave it on the "
+"system it will be ignored by Bastet and will no longer be tracked by the "
+"package management system."
+msgstr ""
+"Sie können sich entscheiden, die Ergebnisdatei jetzt zu löschen. Falls Sie "
+"sie auf dem System belassen, wird sie von Bastet ignoriert und nicht länger "
+"vom Paketverwaltungssystem beachtet."

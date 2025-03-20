@@ -2,19 +2,33 @@
 cat /etc/apt/sources.list
 
 #2
-sudo apt update
+apt update
 
 #3
 apt show build-essential
 
 #4
-sudo apt install build-essential
+apt install build-essential
 apt-cache depends build-essential
 
 #5
 apt search "clone with a bastard algorithm"
 
-#6
+#6,7
 mkdir bastSource
 cd bastSource
 apt source bastet
+
+# inside of the makefile
+
+install:
+        install -m 755 $(PROGNAME) /usr/local/bin/$(PROGNAME)
+
+make
+make install
+
+
+#8
+#9
+#10
+
