@@ -1,0 +1,29 @@
+From 2c42aa31812e1ba6060b80d424093c7077244fb0 Mon Sep 17 00:00:00 2001
+From: Benno Schulenberg <bensberg@telfort.nl>
+Date: Mon, 27 Mar 2023 12:02:19 +0200
+Subject: [PATCH 2/4] startup: use a format string, to deflect format-string
+ attacks
+
+This fixes the second part of https://savannah.gnu.org/bugs/?63964.
+
+Reported-by: Vince Vince
+---
+ src/nano.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/nano.c b/src/nano.c
+index c6db6dd3..8556408e 100644
+--- a/src/nano.c
++++ b/src/nano.c
+@@ -2547,7 +2547,7 @@ int main(int argc, char **argv)
+ 
+ #ifdef ENABLE_NANORC
+ 	if (startup_problem != NULL)
+-		statusline(ALERT, startup_problem);
++		statusline(ALERT, "%s", startup_problem);
+ 
+ #define NOTREBOUND  first_sc_for(MMAIN, do_help) && \
+ 						first_sc_for(MMAIN, do_help)->keycode == 0x07
+-- 
+2.42.1
+

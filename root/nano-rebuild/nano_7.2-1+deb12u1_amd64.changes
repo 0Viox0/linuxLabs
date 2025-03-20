@@ -1,0 +1,52 @@
+Format: 1.8
+Date: Mon, 06 May 2024 08:10:01 +0200
+Source: nano
+Binary: nano nano-dbgsym nano-tiny nano-tiny-dbgsym nano-udeb
+Architecture: source amd64
+Version: 7.2-1+deb12u1
+Distribution: bookworm
+Urgency: medium
+Maintainer: Jordi Mallach <jordi@debian.org>
+Changed-By: Jordi Mallach <jordi@debian.org>
+Description:
+ nano       - small, friendly text editor inspired by Pico
+ nano-tiny  - small, friendly text editor inspired by Pico - tiny build
+ nano-udeb  - small, friendly text editor inspired by Pico - udeb (udeb)
+Closes: 1032422
+Changes:
+ nano (7.2-1+deb12u1) bookworm; urgency=medium
+ .
+   * The "Premio Nacional de Tauromaquia" release.
+   * Fix a partial sync of debian/nanorc in the previous upload.
+     This updates some example bindings to the new syntax, avoiding
+     having control characters in the configuration file (closes: #1032422).
+   * Add 4 post-7.2 upstream patches to fix two minor security issues and
+     a potential data-loss situation. Thanks, Benno Schulenberg!
+   * Set debian-branch to bookworm.
+Checksums-Sha1:
+ 9920811d165f2e1a367bed98b2b657f732d732e3 1357 nano_7.2-1+deb12u1.dsc
+ 92ff579cf246f114bf68c8dd24bb9440f4a3393d 36448 nano_7.2-1+deb12u1.debian.tar.xz
+ ff7a0dfd1f426cc1ec93ff797e15972095fdab56 278496 nano-dbgsym_7.2-1+deb12u1_amd64.deb
+ 21b96fa6804088015955e58181308691dac67cd5 89300 nano-tiny-dbgsym_7.2-1+deb12u1_amd64.deb
+ 9c29cad3459e923e36efd8cea5576ac98f319215 127728 nano-tiny_7.2-1+deb12u1_amd64.deb
+ ac165d9283b1ca984ef496d6da57df0efe747e68 33152 nano-udeb_7.2-1+deb12u1_amd64.udeb
+ 556a8151be61b14df0568e198e174456ccb542b6 6943 nano_7.2-1+deb12u1_amd64.buildinfo
+ 4282f0fa5d87028e08a176de7936f3670e8394ee 689536 nano_7.2-1+deb12u1_amd64.deb
+Checksums-Sha256:
+ 46ae0eb9c8ad0c0a979db4564c5d8dd9ef25f0e9c91eb746063592f976d055a5 1357 nano_7.2-1+deb12u1.dsc
+ bb02c9104a6c6ca4d6a1cf1b987d76d6baf9fc3ad584c0b695782024583a015b 36448 nano_7.2-1+deb12u1.debian.tar.xz
+ 712d7fdaff16972350eb218bc9529418acfbff7c10dedeccfabb8263939b6d65 278496 nano-dbgsym_7.2-1+deb12u1_amd64.deb
+ e0ed88c99a8e9850bd3f85e59087024414f0d5d902acf5354479bcd566f27b4a 89300 nano-tiny-dbgsym_7.2-1+deb12u1_amd64.deb
+ 2af35b1f9db9a6d0612a1e4ee03cf236ecfd1770eff02502457c3d33e7810b88 127728 nano-tiny_7.2-1+deb12u1_amd64.deb
+ eeeb5b6e12d4907ae68950b1e8508b01a71cd1bca8c1d7db6db2d15a1811f97e 33152 nano-udeb_7.2-1+deb12u1_amd64.udeb
+ 53cdec5af705fb51b30896cdb310922dbac8ef5c1bf0e3d03dc7c42f271d57fd 6943 nano_7.2-1+deb12u1_amd64.buildinfo
+ 3b75eabd081f9ffcd54278d97c8af7c80c45b1b0edb1f2f19079a70a670a9792 689536 nano_7.2-1+deb12u1_amd64.deb
+Files:
+ 5cf01ea83dd2036e952757ad830f64bd 1357 editors optional nano_7.2-1+deb12u1.dsc
+ ab09fb74ded6cbad3e6233018e49f08d 36448 editors optional nano_7.2-1+deb12u1.debian.tar.xz
+ 130abd76acd6a212c1322d33be784134 278496 debug optional nano-dbgsym_7.2-1+deb12u1_amd64.deb
+ 146b579a595f3ce1b9ec24cf051001b9 89300 debug optional nano-tiny-dbgsym_7.2-1+deb12u1_amd64.deb
+ a5d5e817075caa0c2ae95642eac3ae8b 127728 editors optional nano-tiny_7.2-1+deb12u1_amd64.deb
+ b3f396e66ed677a102f0b15dbdde0e37 33152 debian-installer standard nano-udeb_7.2-1+deb12u1_amd64.udeb
+ 13ee74a9c7ce0da052d803feba227d67 6943 editors optional nano_7.2-1+deb12u1_amd64.buildinfo
+ a67965c382736cbb1fad1f31684cdf1e 689536 editors important nano_7.2-1+deb12u1_amd64.deb

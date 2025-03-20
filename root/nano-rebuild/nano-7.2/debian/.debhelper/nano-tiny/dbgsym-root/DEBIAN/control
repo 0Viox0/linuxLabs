@@ -1,0 +1,12 @@
+Package: nano-tiny-dbgsym
+Source: nano
+Version: 7.2-1+deb12u1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Jordi Mallach <jordi@debian.org>
+Installed-Size: 113
+Depends: nano-tiny (= 7.2-1+deb12u1)
+Section: debug
+Priority: optional
+Description: debug symbols for nano-tiny
+Build-Ids: abac56db9ecdd5be5a26bab5a96c4a5f6da04527

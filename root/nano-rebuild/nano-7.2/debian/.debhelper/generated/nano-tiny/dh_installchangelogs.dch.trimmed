@@ -1,0 +1,282 @@
+nano (7.2-1+deb12u1) bookworm; urgency=medium
+
+  * The "Premio Nacional de Tauromaquia" release.
+  * Fix a partial sync of debian/nanorc in the previous upload.
+    This updates some example bindings to the new syntax, avoiding
+    having control characters in the configuration file (closes: #1032422).
+  * Add 4 post-7.2 upstream patches to fix two minor security issues and
+    a potential data-loss situation. Thanks, Benno Schulenberg!
+  * Set debian-branch to bookworm.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 06 May 2024 08:10:01 +0200
+
+nano (7.2-1) unstable; urgency=medium
+
+  * The "Blue checkmark" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample.
+  * Update copyright years.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 18 Jan 2023 16:31:52 +0100
+
+nano (7.1-1) unstable; urgency=medium
+
+  * The "Home Petrov, si soc jo!" release.
+  * New upstream release.
+  * Update source lintian-overrides.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 14 Dec 2022 16:15:59 +0100
+
+nano (7.0-1) unstable; urgency=medium
+
+  * The "Cent anys de Joan Fuster" release.
+  * New upstream release.
+  * Update upstream signing key to 168E6F4297BFD7A79AFD4496514BBE2EB8E1961F.
+  * Sync debian/nanorc with upstream nanorc.sample.
+  * Update lintian source-overrides to silence false positives.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 23 Nov 2022 18:10:31 +0100
+
+nano (6.4-1) unstable; urgency=medium
+
+  * The "Explicaciones, ¿de qué? Jajaja" release.
+  * New upstream release.
+  * Update Standards-Version to 4.6.1 (no changes needed).
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 03 Aug 2022 12:35:51 +0200
+
+nano (6.3-1) unstable; urgency=medium
+
+  * The "Duque de Feria" release.
+  * New upstream release.
+  * Add support for the noudeb build profile.
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Tue, 03 May 2022 00:42:04 +0200
+
+nano (6.2-1) unstable; urgency=medium
+
+  * The "Priviet" release.
+  * New upstream release.
+
+ -- Jordi Mallach <jordi@debian.org>  Sat, 19 Feb 2022 09:58:06 +0100
+
+nano (6.1-1) unstable; urgency=medium
+
+  * The "Remolacha" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 09 Feb 2022 12:45:28 +0100
+
+nano (6.0-1) unstable; urgency=medium
+
+  * The "Emérito" release.
+  * New upstream release.
+  * Add debian.nanorc as part of the packaging. Nano upstream has
+    dropped it from the tarball due to its limited scope for users
+    of Debian and derivatives. It'll be maintained here from now on.
+  * Add support for mirror, s3 and in-toto APT transports.
+  * Install out-of-tree syntax files in /usr/share/nano/debian.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 15 Dec 2021 16:41:06 +0100
+
+nano (5.9-1) unstable; urgency=medium
+
+  * The "Miquel Grau" release.
+    - includes syntax highlighting rules for .yaml files (closes: #982091).
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 14 Oct 2021 16:21:27 +0200
+
+nano (5.8-2) unstable; urgency=medium
+
+  * The "Oficina del Español" release.
+  * Update Standards-Version to 4.6.0.
+  * Upload to unstable, now that ncurses can generate correct deps
+    for nano-udeb.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 06 Sep 2021 15:01:19 +0200
+
+nano (5.8-1) experimental; urgency=medium
+
+  * The "mallorquín, menorquín, ibicenco y formenterés" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample.
+  * Bump debian/watch to version 4.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 16 Aug 2021 10:58:50 +0200
+
+nano (5.7-1) experimental; urgency=medium
+
+  * The "Más vale malo conocido" release.
+  * New upstream release.
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 06 May 2021 23:42:32 +0200
+
+nano (5.6.1-1) experimental; urgency=medium
+
+  * The "Ni oblit ni perdó" release.
+  * New upstream release.
+  * Switch ncurses Build-Depends to current -dev package name.
+  * Stop building nano-udeb against S-Lang, as support for it was dropped
+    in nano 5.5. Bump Build-Depends on ncurses to the first version
+    providing libncursesw6-udeb.
+  * Drop all patches.
+
+ -- Jordi Mallach <jordi@debian.org>  Sun, 11 Apr 2021 23:45:05 +0200
+
+nano (5.4-2+deb11u2) bullseye; urgency=medium
+
+  * The "No a l'ampliació del port" release.
+  * Add three additional patches from Benno Schulenberg, with two
+    crash fixes and one data-loss fix.
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 02 Dec 2022 14:06:48 +0100
+
+nano (5.4-2+deb11u1) bullseye; urgency=medium
+
+  * The "Bueno, de verdad, hasta luego, paso" release.
+  * Add additional patches from Benno Schulenberg with post 5.4
+    crash, docs and general fixes.
+  * Change debian-branch to bullseye.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 22 Nov 2021 01:07:23 +0100
+
+nano (5.4-2) unstable; urgency=medium
+
+  * The "M." release.
+  * Add a collection of relevant, post 5.4 patches provided by
+    Benno Schulenberg. Thank you!
+  * Build-Depend on texinfo as patching the docs requires makeinfo.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 08 Feb 2021 00:21:28 +0100
+
+nano (5.4-1) unstable; urgency=medium
+
+  * The "Isabel Zendal Warehouse" release.
+  * New upstream release.
+  * Compile -tiny and -udeb with --without-included-regex to make binaries
+    substantially smaller. Also get rid of superfluous configure options
+    that are disabled by default when building with --enable-tiny.
+    Thanks to Benno Schulenberg for the suggestion.
+  * Sync debian/nanorc with upstream nanorc.sample and correct references
+    to @PKGDATADIR@ (closes: #973386).
+  * Update Standards-Version to 4.5.1, with no changes needed.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 02 Dec 2020 13:16:08 +0100
+
+nano (5.3-1) unstable; urgency=medium
+
+  * The "Nou d’Octubre" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample and enable stateflags
+    by default. See manpage for details.
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 09 Oct 2020 14:56:25 +0200
+
+nano (5.2-1) unstable; urgency=medium
+
+  * The "Rastreadores voluntarios" release.
+  * New upstream release.
+
+ -- Jordi Mallach <jordi@debian.org>  Wed, 26 Aug 2020 16:22:10 +0200
+
+nano (5.1-1) unstable; urgency=medium
+
+  * The "Operación Bicho" release.
+  * New upstream release.
+  * Symlink the debian and haskell nanorc files down from the extra
+    directory to enable them by default.
+  * Override lintian warning about non-upstreamed nano-tiny manual page.
+  * Convert nano-tiny.fr.1 to UTF-8.
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 14 Aug 2020 01:58:20 +0200
+
+nano (4.9.3-1) unstable; urgency=medium
+
+  * The "Herd Immunity" release.
+  * Drop --disable-wrapping-as-root from nano's configure call, it's obsolete.
+  * Move to debhelper compat v13.
+
+ -- Jordi Mallach <jordi@debian.org>  Mon, 01 Jun 2020 16:40:44 +0200
+
+nano (4.9.2-1) unstable; urgency=medium
+
+  * The "Cantó i el concepte de la sort" release.
+  * New upstream release.
+
+ -- Jordi Mallach <jordi@debian.org>  Tue, 07 Apr 2020 19:36:13 +0200
+
+nano (4.9.1-1) unstable; urgency=medium
+
+  * The "https://xkcd.com/2287/" release.
+  * New upstream release.
+
+ -- Jordi Mallach <jordi@debian.org>  Tue, 31 Mar 2020 14:50:23 +0200
+
+nano (4.9-1) unstable; urgency=medium
+
+  * The "https://www.youtube.com/watch?v=1QkecjKLKQU" release.
+  * New upstream release.
+  * Update upstream signing key.
+  * Add upstream metadata information.
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Sun, 29 Mar 2020 00:06:09 +0100
+
+nano (4.8-1) unstable; urgency=medium
+
+  * The "SIT AND TALK" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 14 Feb 2020 11:08:47 +0100
+
+nano (4.7-2) unstable; urgency=medium
+
+  * The "Glòria" release.
+  * No change reupload as I uploaded amd64 binaries by mistake. 🙄
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 30 Jan 2020 23:54:29 +0100
+
+nano (4.7-1) unstable; urgency=medium
+
+  * The "#MaiPAI" release.
+  * New upstream release.
+  * Add gbp.conf.
+  * Update Standards-Version to 4.5.0.
+  * Build nano-tiny against ncurses. Slang support is increasingly
+    buggy due to untested codepaths and bugs in Slang itself.
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 30 Jan 2020 00:29:34 +0100
+
+nano (4.6-1) unstable; urgency=medium
+
+  * The "Tren Gandia-Dénia" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample.
+  * Suggest hunspell instead of spell, as nano will now try that first.
+
+ -- Jordi Mallach <jordi@debian.org>  Fri, 29 Nov 2019 16:14:55 +0100
+
+nano (4.5-1) unstable; urgency=medium
+
+  * The "Paco’s Unboxing" release.
+  * New upstream release.
+  * Sync debian/nanorc with upstream nanorc.sample.
+
+ -- Jordi Mallach <jordi@debian.org>  Tue, 08 Oct 2019 22:34:55 +0200
+
+nano (4.4-1) unstable; urgency=medium
+
+  * The "Forn de Barraca" release.
+  * New upstream release.
+  * Switch to debhelper compat v12 and use debhelper-compat instead of
+    debian/compat.
+
+ -- Jordi Mallach <jordi@debian.org>  Thu, 26 Sep 2019 17:58:26 +0200
+
+# Older entries have been removed from this changelog.
+# To read the complete changelog use `apt changelog nano-tiny`.

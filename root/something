@@ -70,3 +70,10 @@ sudo apt install htop=3.2.2-2
 
 #19
 
+mkdir nano-rebuild && cd nano-rebuild
+apt source nano
+cd nano-7.2/
+dpkg-buildpackage -us -uc
+dpkg -i ../nano-tiny_7.2-1+deb12u1_amd64.deb
+sudo ln -s /usr/bin/nano /usr/bin/newnano
+

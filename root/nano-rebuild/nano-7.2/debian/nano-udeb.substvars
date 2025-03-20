@@ -1,0 +1,3 @@
+shlibs:Depends=libc6-udeb (>= 2.36), libncursesw6-udeb (>= 6.3+20220423), libtinfo6-udeb (>= 6.3+20220423)
+misc:Depends=
+misc:Pre-Depends=

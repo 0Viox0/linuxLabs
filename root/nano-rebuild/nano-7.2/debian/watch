@@ -1,0 +1,3 @@
+version=4
+opts="pgpsigurlmangle=s/$/.asc/" \
+https://nano-editor.org/dist/v(\d)+/nano-([\d\.]+)\.tar\.xz

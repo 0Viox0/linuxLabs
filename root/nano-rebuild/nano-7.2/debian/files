@@ -1,0 +1,6 @@
+nano-dbgsym_7.2-1+deb12u1_amd64.deb debug optional automatic=yes
+nano-tiny-dbgsym_7.2-1+deb12u1_amd64.deb debug optional automatic=yes
+nano-tiny_7.2-1+deb12u1_amd64.deb editors optional
+nano-udeb_7.2-1+deb12u1_amd64.udeb debian-installer standard
+nano_7.2-1+deb12u1_amd64.buildinfo editors optional
+nano_7.2-1+deb12u1_amd64.deb editors important
